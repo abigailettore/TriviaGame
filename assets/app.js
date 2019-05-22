@@ -6,21 +6,6 @@ var correctAnswers = ["Liza","Scranton","K","Phyllis","Phillip","Dwight","Garden
 var timer=0;
 
 
-var timeLeft = 30;
-    var elem = document.getElementById('timer');
-    
-    var timerId = setInterval(countdown, 1000);
-    
-    function countdown() {
-      if (timeLeft == 0) {
-        clearTimeout(timerId);
-        doSomething();
-      } else {
-        elem.innerHTML = timeLeft + ' seconds remaining';
-        timeLeft--;
-      }
-    }
-
 $("#startGame").click(function(){
     startGame()
     var timeRemaining=30;
