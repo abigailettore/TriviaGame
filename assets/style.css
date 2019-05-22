@@ -1,0 +1,24 @@
+#endGame, #startGame{
+    background-color: peru;
+    color: white;
+    text-align: center;
+}
+h1{
+    color: peru;
+    font-size: 50px;
+    text-align: center;
+}
+p{
+    color: darkgoldenrod;
+    text-align: center;
+    text-align: left;
+} 
+div{
+    background-color: lightgoldenrodyellow;
+    color: peru;
+    text-align: center;
+}
+#timer{
+    font-size: 20px;
+    text-align: center;
+}

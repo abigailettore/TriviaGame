@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>TriviaGame</title>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<style>
+    body {
+      background-image: url("assets/images/background.jpg");
+    }
+</style>
+<body>
+<div class="container">
+    <div class="header">
+    <h1>
+        The Office Trivia Game
+    </h1>
+    <button type="button" id="startGame" class="btn btn-success">Start!</button>
+    
+    <p id="timer">Time Remaining: </p>
+    
+        <div id="questions">
+        
+        <div class="questionOne">
+            <p>Who is not a character on The Office?</p>
+            <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" value="Kelly">
+                    <label class="custom-control-label" for="customRadioInline1">Kelly</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" value="Creed">
+                    <label class="custom-control-label" for="customRadioInline2">Creed</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input" value="Liza">
+                    <label class="custom-control-label" for="customRadioInline3">Liza</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input" value="Blake">
+                    <label class="custom-control-label" for="customRadioInline4">Blake</label>
+                </div>
+        <div class="questionTwo">
+            <p>What city does The Office take place in?</p>
+            <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline5" name="customRadioInline5" class="custom-control-input" value="Scranton">
+                    <label class="custom-control-label" for="customRadioInline5">Scranton</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline6" name="customRadioInline5" class="custom-control-input" value="Philadelphia">
+                    <label class="custom-control-label" for="customRadioInline6">Philadelphia</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline7" name="customRadioInline5" class="custom-control-input" value="New York">
+                    <label class="custom-control-label" for="customRadioInline7">New York</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline8" name="customRadioInline5" class="custom-control-input" value="Gettysburg">
+                    <label class="custom-control-label" for="customRadioInline8">Gettysburg</label>
+                </div>
+        <div class="questionThree">
+            <p>What is Dwights middle initial?</p>
+            <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline9" name="customRadioInline9" class="custom-control-input" value="J">
+                    <label class="custom-control-label" for="customRadioInline9">J</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline10" name="customRadioInline9" class="custom-control-input" value="K">
+                    <label class="custom-control-label" for="customRadioInline10">K</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline11" name="customRadioInline9" class="custom-control-input" value="L">
+                    <label class="custom-control-label" for="customRadioInline11">L</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline12" name="customRadioInline9" class="custom-control-input" value="G">
+                    <label class="custom-control-label" for="customRadioInline12">G</label>
+                </div>
+        <div class="questionFour">
+            <p>Who did Michael not have a romantic relationship with?</p>
+            <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline13" name="customRadioInline13" class="custom-control-input" value="Jan">
+                    <label class="custom-control-label" for="customRadioInline13">Jan</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline14" name="customRadioInline13" class="custom-control-input" value="Helene">
+                    <label class="custom-control-label" for="customRadioInline14">Helene</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline15" name="customRadioInline13" class="custom-control-input" value="Holly">
+                    <label class="custom-control-label" for="customRadioInline15">Holly</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline16" name="customRadioInline13" class="custom-control-input" value="Phyllis">
+                    <label class="custom-control-label" for="customRadioInline16">Phyllis</label>
+                </div>
+        <div class="questionFive">
+                <p>What is Pam and Jim's second baby's name?</p>
+                <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline17" name="customRadioInline17" class="custom-control-input" value="Jim Jr.">
+                        <label class="custom-control-label" for="customRadioInline17">Jim Jr.</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline18" name="customRadioInline17" class="custom-control-input" value="Phillip">
+                        <label class="custom-control-label" for="customRadioInline18">Phillip</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline19" name="customRadioInline17" class="custom-control-input" value="Kevin">
+                        <label class="custom-control-label" for="customRadioInline19">Kevin</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline20" name="customRadioInline17" class="custom-control-input" value="Michael">
+                        <label class="custom-control-label" for="customRadioInline20">Michael</label>
+                    </div>
+        <div class="questionSix">
+            <p>Who is the real father of Angela's baby?</p>
+            <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline21" name="customRadioInline21" class="custom-control-input" value="The Senator">
+                    <label class="custom-control-label" for="customRadioInline21">The Senator</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline22" name="customRadioInline21" class="custom-control-input" value="Dwight">
+                    <label class="custom-control-label" for="customRadioInline22">Dwight</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline23" name="customRadioInline21" class="custom-control-input" value="Michael">
+                    <label class="custom-control-label" for="customRadioInline23">Michael</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline24" name="customRadioInline21" class="custom-control-input" value="Jim">
+                    <label class="custom-control-label" for="customRadioInline24">Jim</label>
+                </div>
+        <div class="questionSeven">
+            <p>What kind of party does Dwight throw for Andy?</p>
+            <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline25" name="customRadioInline25" class="custom-control-input" value="Wedding">
+                    <label class="custom-control-label" for="customRadioInline25">Wedding</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline26" name="customRadioInline25" class="custom-control-input" value="Garden">
+                    <label class="custom-control-label" for="customRadioInline26">Garden</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline27" name="customRadioInline25" class="custom-control-input" value="Birthday">
+                    <label class="custom-control-label" for="customRadioInline27">Birthday</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline28" name="customRadioInline25" class="custom-control-input" value="Funeral">
+                    <label class="custom-control-label" for="customRadioInline28">Funeral</label>
+                </div>
+        <div class="questionEight">
+            <p>Who does D'Angelo replace?</p>
+            <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline29" name="customRadioInline29" class="custom-control-input" value="Dwight">
+                    <label class="custom-control-label" for="customRadioInline29">Dwight</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline30" name="customRadioInline29" class="custom-control-input" value="Robert California">
+                    <label class="custom-control-label" for="customRadioInline30">Robert California</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline31" name="customRadioInline29" class="custom-control-input" value="Michael">
+                    <label class="custom-control-label" for="customRadioInline31">Michael</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline32" name="customRadioInline29" class="custom-control-input" value="Jim">
+                    <label class="custom-control-label" for="customRadioInline32">Jim</label>
+                </div>
+        <div class="questionNine">
+            <p>How many seasons of The Office are there?</p>
+            <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline33" name="customRadioInline34" class="custom-control-input" value="6">
+                    <label class="custom-control-label" for="customRadioInline33">6</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline34" name="customRadioInline34" class="custom-control-input" value="5">
+                    <label class="custom-control-label" for="customRadioInline34">5</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline35" name="customRadioInline34" class="custom-control-input" value="10">
+                    <label class="custom-control-label" for="customRadioInline35">10</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline36" name="customRadioInline34" class="custom-control-input" value="9">
+                    <label class="custom-control-label" for="customRadioInline36">9</label>
+                </div>
+        <div class="questionTen">
+            <p>Who does Ryan have an on/off relationship with?</p>
+            <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline37" name="customRadioInline38" class="custom-control-input" value="Kelly">
+                    <label class="custom-control-label" for="customRadioInline37">Kelly</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline38" name="customRadioInline38" class="custom-control-input" value="Jan">
+                    <label class="custom-control-label" for="customRadioInline38">Jan</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline39" name="customRadioInline38" class="custom-control-input" value="Pam">
+                    <label class="custom-control-label" for="customRadioInline39">Pam</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline40" name="customRadioInline38" class="custom-control-input" value="Nelly">
+                    <label class="custom-control-label" for="customRadioInline40">Nelly</label>
+                </div>         
+            </div>  
+        </div>
+    <br>
+    <button type="button" id="endGame">Done!</button>
+    </div>
+    
+    <div id="score">
+        <p id="correct">Correct Answers: </p>
+        <p id="incorrect">incorrect Answers: </p>
+        <p id="notAnswered">Not Answered: </p>
+    </div>
+
+</body>
+
+<script scr="assets/app.js"></script>
+
+</html>
