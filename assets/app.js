@@ -1,21 +1,21 @@
-var answer= ""
 var unAnswered = 10
 var correctAnswer= 0
 var incorrectAnswer=0
 var correctAnswers = ["Liza","Scranton","K","Phyllis","Phillip","Dwight","Garden", "Michael", "9", "Kelly"]
-var timer=0;
-
+var timer=30;
+var intervalId;
 
 $("#startGame").click(function(){
     startGame()
     var timeRemaining=30;
     timer= setInterval(function(){
-        document.getElementById("timer").innerHTML=timeRemaining + " seconds";
+        document.getElementById("#startGame").innerHTML=timeRemaining + " seconds";
         timeRemaining -= 1;
         if(timeRemaining<=0){
             endGame()
         }
     },1000);
+    console.log("hi");
     })
 $('.custom-control-input').click(function(event){
     var answer= event.target.value
